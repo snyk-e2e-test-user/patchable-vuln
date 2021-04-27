@@ -9,7 +9,6 @@
   "dependencies": {
     "adm-zip": "0.4.7",
     "ms": "^0.7.1",
-
   },
   "devDependencies": {
     "browserify": "^13.1.1",
