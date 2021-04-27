@@ -1,10 +1,13 @@
 {
   "name": "patchable-vulns",
   "version": "1.0.0",
-    "description": "",
-  "main": "index.js",
+  "description": "",
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "build": "browserify -r jquery > public/js/bundle.js",
+    "cleanup": "mongo express-todo --eval 'db.todos.remove({});'",
+    "test": "snyk test"
   },
   "dependencies": {
     "adm-zip": "0.4.7",
@@ -14,4 +17,5 @@
     "browserify": "^13.1.1",
     "snyk": "^1.244.0"
   },
+  "license": "Apache-2.0"
 }
